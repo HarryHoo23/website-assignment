@@ -22,10 +22,6 @@
     /* rest of the colors */
     --black: #222;
     --white: #fff;
-    --red-light: #f8d7da;
-    --red-dark: #842029;
-    --green-light: #d1e7dd;
-    --green-dark: #0f5132;
 
     /* fonts  */
     --small-text: 10px;
@@ -33,12 +29,9 @@
     /* rest of the vars */
     --backgroundColor: var(--grey-50);
     --textColor: var(--grey-900);
-    --borderRadius: 5px;
     --letterSpacing: 0.02rem;
     --transition: 0.3s ease-in-out all;
     --max-width: 1200px;
-    --fluid-width: 90vw;
-    --nav-height: 6rem;
     /* box shadow*/
     --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
@@ -202,6 +195,10 @@ ul.menu-list {
     font-size: 40px;
 }
 
+.banner h2 {
+    margin-bottom: 50px;
+}
+
 .banner h2 strong {
     color: var(--primary-500);
 }
@@ -352,4 +349,113 @@ ul.menu-list {
 
 .footer-list li {
     margin: 10px 10px;
+}
+
+
+/* Portfolio page */
+#portfolio-nav-menu {
+    position: relative;
+}
+
+.portfolio-section {
+    background-color: var(--grey-100);
+    padding: 80px 0;
+}
+
+.portfolio-table {
+    width: 100%;
+    margin-top: 80px;
+    border: 1px solid var(--grey-200);
+}
+
+.portfolio-table th {
+    text-align: left;
+    padding: 20px 15px;
+    background-color: var(--grey-200);
+    white-space: nowrap;
+}
+
+.portfolio-table tr:nth-child(odd) {
+    background-color: var(--grey-200);
+}
+
+.portfolio-table tr td {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.portfolio-table td img {
+    max-width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.contact {
+    width: 150px;
+}
+
+.contact .btn {
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* Contact us */
+#contact-nav-menu {
+    position: relative;
+}
+
+.contact-banner {
+    height: 60vh;
+    background-image: url("./asset/design.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-left {
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.contact-left h2 {
+    color: var(--primary-900);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.contact-list {
+    margin: 0;
+    padding: 0;
+}
+
+.time {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url("./asset/time.jpg") no-repeat center center /cover;
+    color: #fff;
+}
+
+.open-time-box {
+    margin-top: 20px;
+    padding: 20px 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: var(--shadow-4);
+}
+
+.open-time-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.map {
+    padding-bottom: 0px;
+}
+
+.map h1 {
+    margin-bottom: 100px;
 }
